@@ -1,0 +1,40 @@
+h1{
+    color: red;
+}
+
+div#overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: black;
+    opacity: 0.85;
+    transition: opacity 1s ease-in;
+}
+
+div#overlay.hidden,
+img#big-image.hidden{
+    opacity: 0;
+    left: -200%;
+}
+
+li.lightbox img{
+    height: 200px;
+    width: 150px;
+}
+
+li.lightbox{
+    display: inline-block;
+    margin: 10px;
+}
+
+#big-image.showing{
+    max-width: 80%;
+    max-height: 90%;
+    position: absolute;
+    background-color: white;
+    padding: 10px;
+    top: 5%;
+    left: 10%;
+}
